@@ -1,38 +1,111 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-bar{
+  background-color: tomato;
+  padding: 5px; 
+  font-style: italic;
+  font-weight: bold;
+  font-size: 25px;
+}
+.home{
+  text-align: end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+  border: 2px solid;
+  background-color: teal;
+  font-weight: bolder;
+  font-size: 25px;
+  padding: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: linear-gradient(to right, #9D50BB, #6E48AA);
+}
+.parent{
+  display: flex;
+  flex-wrap: wrap;
+}
+.child{
+    border: 2px solid none;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 2px 5px 5px 3px rgba(0,0,0,.8);
+    background-image: linear-gradient(to right, #00d2ff, #3a7bd5);
+
+}
+.child p{
+  font-size: 17px;
+  font-family:sans-serif;
+  font-weight: bold;
+}
+.btn{
+  padding: 6px 12px;
+  margin: 8px;
+  border: 2px solid;
+  border-radius: 8px;
+  background-color: thistle;
+  box-shadow: 3px 5px 5px 2px rgba(0,0,0,.5);
+}
+
+.btn-home:hover{
+  background-color: darkred;
+  color: white;
+}
+.btn-adduser:hover{
+  background-color: chocolate;
+  color: white;
+}
+.btn-edit:hover{
+  background-color: orangered;
+  color: white;
+}
+.btn-del:hover{
+  background-color: navy;
+  color: white  ;
+}
+.btn-add:hover{
+  background-color: saddlebrown;
+  color: white;
+}
+.btn-update:hover{
+  background-color: rgb(158, 18, 18);
+  color: white;
+}
+.btn-back:hover{
+  background-color: midnightblue;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.add-tag{
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit-tag{
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+}
+input{
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 2px 5px 5px 2px rgba(0,0,0,.8);
+}
+footer{ 
+  position: relative;
+  
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: teal;
+  font-weight: bolder;
+  font-size: larger;
 }
